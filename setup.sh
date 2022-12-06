@@ -22,7 +22,7 @@ fi
 if [ -z "$(git config --get user.email)" ]; then
     echo -n "Gitのメールアドレス: "
     read git_email
-    git config --global user.name "${git_email}"
+    git config --global user.email "${git_email}"
     unset git_email
 fi
 if [ -z "$(git config --get init.defaultBranch)" ]; then
